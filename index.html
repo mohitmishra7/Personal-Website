@@ -3,39 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohit Mishra | Profile</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mohit Mishra - Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #023e8a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    .achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievements li {
+      background: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .social-icons a:hover {
+      color: #90e0ef;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <!-- Font Awesome for Social Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Hi, I'm <span class="highlight">Mohit Mishra</span></h1>
-    <p>A Transportation Engineer & Web Enthusiast</p>
-  </section>
 
-  <!-- Slideshow Section -->
-  <section class="slideshow">
-    <div class="slides fade">
-      <img src="images/slide1.jpg" alt="Slide 1">
-    </div>
-    <div class="slides fade">
-      <img src="images/slide2.jpg" alt="Slide 2">
-    </div>
-    <div class="slides fade">
-      <img src="images/slide3.jpg" alt="Slide 3">
-    </div>
-  </section>
+  <header>
+    <h1>Mohit Mishra</h1>
+    <p>Researcher | Transportation Engineer | Learner</p>
+  </header>
 
-  <!-- About Section -->
-  <section class="about">
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm an engineer who blends technical expertise with creativity. My
-      interests lie in transportation systems, GIS, and building digital tools
-      to solve real-world problems.
+      Welcome to my personal website! I am Mohit Mishra, a transportation engineering researcher passionate about 
+      sustainable mobility, data-driven decision making, and innovative infrastructure solutions. 
+      This website is a space where I share my work, interests, and achievements.
     </p>
   </section>
 
-  <script src="script.js"></script>
+  <section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>2025:</strong> Presented research on mode choice modeling at XYZ Conference.</li>
+      <li><strong>2024:</strong> Published paper on pavement maintenance optimization in International Journal.</li>
+      <li><strong>2023:</strong> Awarded scholarship for graduate studies in Transportation Engineering.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mohitmishra@example.com">mohitmishra@example.com</a></p>
+    <p>Feel free to connect with me on social media:</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mohit Mishra. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
